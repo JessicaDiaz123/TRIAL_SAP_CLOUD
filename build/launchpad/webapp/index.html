@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Project Preview </title>
+    <title> Application Overview </title>
     <script src="https://ui5.sap.com/1.129.2/resources/sap-ui-core.js" 
             id="sap-ui-bootstrap"
             data-sap-ui-theme="sap_horizon"
@@ -27,7 +27,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"RISKService","DetailsURL":"./service/RISKService/","Metadata":"./service/RISKService/$metadata","Entities":[{"Name":"RISK","URL":"./service/RISKService/RISK","FioriURL":"$fiori-preview/RISKService/RISK#preview-app"},{"Name":"Mitigations","URL":"./service/RISKService/Mitigations","FioriURL":"$fiori-preview/RISKService/Mitigations#preview-app"}],"EntitiesCount":2}]}
+                            const data = {"Services":[{"ServiceName":"RISKService","DetailsURL":"./service/RISKService/","Metadata":"./service/RISKService/$metadata","Entities":[{"Name":"RISK","URL":"./service/RISKService/RISK","FioriURL":""},{"Name":"Mitigations","URL":"./service/RISKService/Mitigations","FioriURL":""}],"EntitiesCount":2}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });
